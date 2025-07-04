@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: src
+    database: sourcedb
+    schema: mk_mall
+    tables:
+      - name: nations
+        columns:
+          - name: n_nationkey
+            tests:
+              - unique
+              - not_null
+      - name: regions
+      - name: orders
+        config:
+          freshness:
+            warn_after: {count: 2, period: day}
+            error_after: {count: 3, period: day}
+        loaded_at_field: o_orderdate::timestamp
+      - name: customers
+
