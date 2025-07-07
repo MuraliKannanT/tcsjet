@@ -11,6 +11,7 @@ profile: 'default'
 
 vars:
   cid: 1000
+  cdate: "2025-07-07"
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
