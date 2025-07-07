@@ -10,10 +10,8 @@ config-version: 2
 profile: 'default'
 
 vars:
-  stage:
-    schname: 'stg'
-  intermediate:
-    schname: 'int'
+  cid: 1000
+  cdate: "2025-07-07"
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
@@ -48,4 +46,7 @@ models:
       +materialized: table
     intermediate:
       +materialized: table 
+    marts:
+      +materialized: table 
       +transient: false
+  
