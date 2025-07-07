@@ -3,6 +3,7 @@ version: 2
 sources:
   - name: src
     database: sourcedb
+    description: This is the source database
     schema: mk_mall
     tables:
       - name: nations
@@ -19,4 +20,5 @@ sources:
             error_after: {count: 3, period: day}
         loaded_at_field: o_orderdate::timestamp
       - name: customers
+      - name: lineitems
 
