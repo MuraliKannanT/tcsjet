@@ -1,0 +1,13 @@
+version: 2
+
+groups:
+  - name: groupA
+    owner: 
+      name: Murali
+      email: murali@gmail.com
+  - name: groupB
+    owner: 
+      name: Kannan
+      email: kannan@gmail.com
+
+
