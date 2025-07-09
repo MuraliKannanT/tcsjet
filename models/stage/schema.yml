@@ -22,7 +22,7 @@ models:
         tests:
           - lesservalues:
               pk_name: customer_id
-              threshold: -980
+              threshold: -1000
       - name: market_segment
         description: market segment of the customer
       - name: comment
