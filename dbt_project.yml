@@ -46,6 +46,7 @@ models:
       +materialized: table
     intermediate:
       +materialized: table 
+      +schema: dbt_inter
     marts:
       +materialized: table 
       +transient: false
