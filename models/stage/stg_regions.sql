@@ -1,3 +1,6 @@
+{{ config(pre_hook = "alter session set query_tag = 'tag_test'" ) }}
+
+
 with
     tablename as (
         select 
