@@ -6,7 +6,8 @@ with
         select 
         r_regionkey as region_id, 
         r_name as name, 
-        r_comment as comment
+        r_comment as comment,
+       {{current_timestamp()}} as curdate
         from {{ source("src","regions") }}  )
 
 select * from tablename
