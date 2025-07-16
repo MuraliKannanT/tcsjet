@@ -4,7 +4,7 @@ sources:
   - name: src
     database: sourcedb
     description: This is the source database
-    schema: mk_mall
+    schema: mk_raw
     tables:
       - name: nations
         columns:
